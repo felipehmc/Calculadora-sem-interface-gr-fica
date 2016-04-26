@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package calculator;
 
-/**
- *
- * @author felip
- */
 public class Calculator {
-    int value;
-    int keep;
+    double value;
+    double keep;
     char toDo;
     void Operation (char op){
         keep = value;
@@ -37,10 +28,10 @@ public class Calculator {
         value = 0;
         keep = 0;
     }
-    void digit(int x){
+    void digit(double x){
         value = value*10 + x;
     }
-    int display(){
+    double display(){
         return value;
     }
     Calculator(){clear();}
@@ -49,7 +40,7 @@ public class Calculator {
         Calculator C1 = new Calculator();
         C1.digit(4);
         C1.digit(6);
-        C1.add();
+        C1.divide();
         C1.digit(3);
         C1.digit(1);
         C1.compute();
