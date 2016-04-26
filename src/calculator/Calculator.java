@@ -38,11 +38,11 @@ public class Calculator {
     
     public static void main(String[] args) {
         Calculator C1 = new Calculator();
-        C1.digit(4);
-        C1.digit(6);
-        C1.divide();
         C1.digit(3);
-        C1.digit(1);
+        C1.digit(2);
+        C1.divide();
+        C1.digit(7);
+        //C1.digit(1);
         C1.compute();
         System.out.println(C1.display());
     }
